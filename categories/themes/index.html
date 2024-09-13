@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://zhanghony.github.io/categories/themes/'>
 
-<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="Category: Themes - blog">
+<link rel="stylesheet" href="/scss/style.min.b18cef3d5bc1252510e3b0eb10eae9b88426c168938f9b57637d6f2cdd3f9de9.css"><meta property='og:title' content="Category: Themes - blog">
 <meta property='og:description' content="博客">
 <meta property='og:url' content='https://zhanghony.github.io/categories/themes/'>
 <meta property='og:site_name' content='blog'>
@@ -68,7 +68,7 @@
         
         <div class="site-meta">
             <h1 class="site-name"><a href="/">blog</a></h1>
-            <h2 class="site-description">记录自己的一些开发或者学习记录</h2>
+            <h2 class="site-description">web3开发学习</h2>
         </div>
     </header><ol class="menu" id="main-menu">
         
@@ -95,7 +95,7 @@
         
         
         <li >
-            <a href='/%E5%85%B3%E4%BA%8E/' >
+            <a href='/about/' >
                 
                 
                 
@@ -109,6 +109,27 @@
 
                 
                 <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/categories/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                
+                <span>分类</span>
             </a>
         </li>
         
@@ -128,7 +149,7 @@
 
 
                 
-                <span>Archives</span>
+                <span>归档</span>
             </a>
         </li>
         
@@ -147,7 +168,7 @@
 
 
                 
-                <span>Search</span>
+                <span>搜索</span>
             </a>
         </li>
         
@@ -166,35 +187,12 @@
 
 
                 
-                <span>Links</span>
+                <span>技术链接</span>
             </a>
         </li>
         
         <li class="menu-bottom-section">
             <ol class="menu">
-                    
-                        <li id="i18n-switch">  
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M4 5h7" />
-  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
-  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
-  <path d="M12 20l4 -9l4 9" />
-  <path d="M19.1 18h-6.2" />
-</svg>
-
-
-
-                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
-                                
-                                    <option value="https://zhanghony.github.io/" selected>中文</option>
-                                
-                                    <option value="https://zhanghony.github.io/en/" >English</option>
-                                
-                            </select>
-                        </li>
-                    
-                
 
                 
                     <li id="dark-mode-toggle">
@@ -460,6 +458,110 @@
         document.head.appendChild(customFont);
     }());
 </script>
+ 
 
+
+
+<div id="aplayer"></div>
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+
+
+
+
+
+
+
+<script>
+    const staticDir = "https://zhanghony.github.io/" + 'music/';
+    const songs = ['情深几许 (女声版)-心歌'
+                    ,'殇雪-心歌'
+    ];
+    let audios = [];
+    songs.forEach((item) => {
+        const songInfo = item.split('-');
+        audios.push( {
+                
+                name: songInfo[0],
+                artist: songInfo[1],
+                url: staticDir + item+ '.mp3',
+                cover: staticDir +'cover/' + item+  '.jpg',
+                lrc: staticDir +'lrc/' + item+  '.krc',
+            });
+    });
+    const ap = new APlayer({
+        container: document.getElementById('aplayer'),
+        
+        listMaxHeight:"120px",
+        lrcType: 3,
+        audio: audios,
+        
+        fixed: true
+    });
+
+
+    
+
+     window.onbeforeunload = () => {
+        
+        const playInfo = {
+            index: ap.list.index,
+            currentTime: ap.audio.currentTime,
+            paused: ap.paused
+        };
+        localStorage.setItem("playInfo", JSON.stringify(playInfo));
+    };
+
+    
+
+    window.onload = () => {
+        
+        const playInfo = JSON.parse(localStorage.getItem("playInfo"));
+        if (!playInfo) {
+            return;
+        }
+        
+        ap.list.switch(playInfo.index);
+        
+        setTimeout(() => {
+            
+            ap.seek(playInfo.currentTime);
+            
+            if (!playInfo.paused) {
+                ap.play()
+            }
+        }, 50);
+    };
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script>
+<script>
+	var pjax = new Pjax({
+	  selectors: [
+	    ".main-container"
+	  ]
+	})
+    pjax._handleResponse = pjax.handleResponse;
+    pjax.handleResponse = function(responseText, request, href, options) {
+        if (request.responseText.match("<html")) {
+            
+            let newDom = new DOMParser().parseFromString(responseText, 'text/html');
+            
+            let bodyClass = newDom.body.className;
+            document.body.setAttribute("class", bodyClass)
+            
+            pjax._handleResponse(responseText, request, href, options);
+        } else {
+            
+        }
+    }
+
+    document.addEventListener('pjax:complete', () => {
+        
+        window.Stack.init();
+    })
+
+    
+    
+</script>
     </body>
 </html>
