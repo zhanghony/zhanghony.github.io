@@ -580,7 +580,35 @@
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script>
+<script src="live2d-widget/autoload.js"></script>
+
+
+    
+    <script src=https://zhanghony.github.io/js/topbar.min.js></script>
+
+
+
+
 <script>
+
+     
+     topbar.config({
+        barColors: {
+            '0': 'rgba(255,  255, 255, 1)', 
+            '1.0': 'rgba(0, 149, 234,  1)' 
+        }
+    })
+	
+    document.addEventListener('pjax:send', () => {
+        
+        topbar.show();
+    })
+	
+    document.addEventListener('pjax:complete', () => {
+        
+        topbar.hide();
+    })
+
 	var pjax = new Pjax({
 	  selectors: [
 	    ".main-container"
