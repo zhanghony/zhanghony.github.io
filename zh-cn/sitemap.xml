@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://zhanghony.github.io/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2024-09-13T11:16:15+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -14,6 +14,12 @@
                 hreflang="zh-cn"
                 href="https://zhanghony.github.io/"
                 />
+  </url><url>
+    <loc>https://zhanghony.github.io/post/</loc>
+    <lastmod>2024-09-13T11:16:15+08:00</lastmod>
+  </url><url>
+    <loc>https://zhanghony.github.io/p/web3/</loc>
+    <lastmod>2024-09-13T11:16:15+08:00</lastmod>
   </url><url>
     <loc>https://zhanghony.github.io/categories/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
@@ -29,9 +35,6 @@
                 />
   </url><url>
     <loc>https://zhanghony.github.io/p/test-chinese/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://zhanghony.github.io/post/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zhanghony.github.io/categories/test/</loc>
