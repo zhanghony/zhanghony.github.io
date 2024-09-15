@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://zhanghony.github.io/about/'>
 
-<link rel="stylesheet" href="/scss/style.min.98924d5fadcfa12d0614c578c7a15e3eaf4ce2816331765259cca8bda86f57de.css"><meta property='og:title' content="学习资源">
+<link rel="stylesheet" href="/scss/style.min.1184bf3bb1946afcedef0182285f06fd04293f01d3242f9c7e8c650652c25803.css"><meta property='og:title' content="学习资源">
 <meta property='og:description' content="为了更好的学习，整理了一份学习资源列表">
 <meta property='og:url' content='https://zhanghony.github.io/about/'>
 <meta property='og:site_name' content='blog'>
@@ -693,76 +693,25 @@
 
 
 
-<div id="aplayer"></div>
+
 <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
 
 
 
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+<meting-js
+    server="netease"
+    type="playlist"
+    id = "7561460225"
+    fixed="true"
+    list-folded="true"
+    storage-name="metingjs"
+>
+
+</meting-js>
 
 
-
-
-<script>
-    const staticDir = "https://zhanghony.github.io/" + 'music/';
-    const songs = ['情深几许 (女声版)-心歌'
-                    ,'殇雪-心歌'
-    ];
-    let audios = [];
-    songs.forEach((item) => {
-        const songInfo = item.split('-');
-        audios.push( {
-                
-                name: songInfo[0],
-                artist: songInfo[1],
-                url: staticDir + item+ '.mp3',
-                cover: staticDir +'cover/' + item+  '.jpg',
-                lrc: staticDir +'lrc/' + item+  '.krc',
-            });
-    });
-    const ap = new APlayer({
-        container: document.getElementById('aplayer'),
-        
-        listMaxHeight:"120px",
-        lrcType: 3,
-        audio: audios,
-        
-        fixed: true
-    });
-
-
-    
-
-     window.onbeforeunload = () => {
-        
-        const playInfo = {
-            index: ap.list.index,
-            currentTime: ap.audio.currentTime,
-            paused: ap.paused
-        };
-        localStorage.setItem("playInfo", JSON.stringify(playInfo));
-    };
-
-    
-
-    window.onload = () => {
-        
-        const playInfo = JSON.parse(localStorage.getItem("playInfo"));
-        if (!playInfo) {
-            return;
-        }
-        
-        ap.list.switch(playInfo.index);
-        
-        setTimeout(() => {
-            
-            ap.seek(playInfo.currentTime);
-            
-            if (!playInfo.paused) {
-                ap.play()
-            }
-        }, 50);
-    };
-</script>
 
 <script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script>
 

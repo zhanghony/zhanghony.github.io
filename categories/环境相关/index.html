@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://zhanghony.github.io/categories/%E7%8E%AF%E5%A2%83%E7%9B%B8%E5%85%B3/'>
 
-<link rel="stylesheet" href="/scss/style.min.98924d5fadcfa12d0614c578c7a15e3eaf4ce2816331765259cca8bda86f57de.css"><meta property='og:title' content="Category: 环境相关 - blog">
+<link rel="stylesheet" href="/scss/style.min.1184bf3bb1946afcedef0182285f06fd04293f01d3242f9c7e8c650652c25803.css"><meta property='og:title' content="Category: 环境相关 - blog">
 <meta property='og:description' content="各种软件安装环境以及开发或者使用工具时遇到的问题解决方案">
 <meta property='og:url' content='https://zhanghony.github.io/categories/%E7%8E%AF%E5%A2%83%E7%9B%B8%E5%85%B3/'>
 <meta property='og:site_name' content='blog'>
@@ -263,6 +263,14 @@
         
         <div class="widget-archive--list">
             <div class="archives-year">
+                    <a href="/archives/#2022">
+                        
+                            <span class="year">2022</span>
+                            <span class="count">1</span>
+                        
+                    </a> 
+                </div>
+            <div class="archives-year">
                     <a href="/archives/#2020">
                         
                             <span class="year">2020</span>
@@ -293,7 +301,7 @@
 
     <div class="tagCloud-tags">
         
-            <a href="/categories/%E7%8E%AF%E5%A2%83%E7%9B%B8%E5%85%B3/" class="font_size_2">
+            <a href="/categories/%E7%8E%AF%E5%A2%83%E7%9B%B8%E5%85%B3/" class="font_size_3">
                 环境相关
             </a>
         
@@ -326,6 +334,10 @@
                 Github
             </a>
         
+            <a href="/tags/go/" class="font_size_1">
+                Go
+            </a>
+        
     </div>
 </section>
             
@@ -343,7 +355,7 @@
 
         <div class="section-card">
             <div class="section-details">
-                <h3 class="section-count">2 个页面</h3>
+                <h3 class="section-count">3 个页面</h3>
                 <h1 class="section-term">环境相关</h1>
                 
                     <h2 class="section-description">各种软件安装环境以及开发或者使用工具时遇到的问题解决方案</h2>
@@ -359,6 +371,17 @@
     </header>
     
     <section class="article-list--compact">
+        
+            <article>
+    <a href="/p/environment/">
+        <div class="article-details">
+            <h2 class="article-title">go 中如何格式化时间</h2>
+            <footer class="article-time">
+                <time datetime='2022-08-04T09:43:56Z'>2022-08-04</time>
+            </footer>
+        </div>
+    </a>
+</article>
         
             <article>
     <a href="/p/environment/">
@@ -421,76 +444,25 @@
 
 
 
-<div id="aplayer"></div>
+
 <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
 
 
 
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+<meting-js
+    server="netease"
+    type="playlist"
+    id = "7561460225"
+    fixed="true"
+    list-folded="true"
+    storage-name="metingjs"
+>
+
+</meting-js>
 
 
-
-
-<script>
-    const staticDir = "https://zhanghony.github.io/" + 'music/';
-    const songs = ['情深几许 (女声版)-心歌'
-                    ,'殇雪-心歌'
-    ];
-    let audios = [];
-    songs.forEach((item) => {
-        const songInfo = item.split('-');
-        audios.push( {
-                
-                name: songInfo[0],
-                artist: songInfo[1],
-                url: staticDir + item+ '.mp3',
-                cover: staticDir +'cover/' + item+  '.jpg',
-                lrc: staticDir +'lrc/' + item+  '.krc',
-            });
-    });
-    const ap = new APlayer({
-        container: document.getElementById('aplayer'),
-        
-        listMaxHeight:"120px",
-        lrcType: 3,
-        audio: audios,
-        
-        fixed: true
-    });
-
-
-    
-
-     window.onbeforeunload = () => {
-        
-        const playInfo = {
-            index: ap.list.index,
-            currentTime: ap.audio.currentTime,
-            paused: ap.paused
-        };
-        localStorage.setItem("playInfo", JSON.stringify(playInfo));
-    };
-
-    
-
-    window.onload = () => {
-        
-        const playInfo = JSON.parse(localStorage.getItem("playInfo"));
-        if (!playInfo) {
-            return;
-        }
-        
-        ap.list.switch(playInfo.index);
-        
-        setTimeout(() => {
-            
-            ap.seek(playInfo.currentTime);
-            
-            if (!playInfo.paused) {
-                ap.play()
-            }
-        }, 50);
-    };
-</script>
 
 <script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script>
 
