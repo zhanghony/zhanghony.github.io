@@ -7,12 +7,12 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>zhanghony</copyright>
-        <lastBuildDate>Thu, 04 Aug 2022 09:43:56 +0000</lastBuildDate><atom:link href="https://zhanghony.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 16 Sep 2024 06:56:30 +0000</lastBuildDate><atom:link href="https://zhanghony.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>go 中如何格式化时间</title>
-        <link>https://zhanghony.github.io/p/environment/</link>
+        <link>https://zhanghony.github.io/p/go-%E4%B8%AD%E5%A6%82%E4%BD%95%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%97%B6%E9%97%B4/</link>
         <pubDate>Thu, 04 Aug 2022 09:43:56 +0000</pubDate>
         
-        <guid>https://zhanghony.github.io/p/environment/</guid>
+        <guid>https://zhanghony.github.io/p/go-%E4%B8%AD%E5%A6%82%E4%BD%95%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%97%B6%E9%97%B4/</guid>
         <description>&lt;p&gt;一个简单的go示例&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

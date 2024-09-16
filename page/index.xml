@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>zhanghony</copyright>
-        <lastBuildDate>Mon, 09 Sep 2024 12:00:23 +0000</lastBuildDate><atom:link href="https://zhanghony.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 16 Sep 2024 06:56:30 +0000</lastBuildDate><atom:link href="https://zhanghony.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>归档</title>
         <link>https://zhanghony.github.io/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
@@ -229,14 +229,6 @@
     &gt;https://www.oklink.com/zh-hans/approval&lt;/a&gt; OKX 钱包授权检测。&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        </item>
-        <item>
-        <title>分类</title>
-        <link>https://zhanghony.github.io/categories/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://zhanghony.github.io/categories/</guid>
-        <description></description>
         </item>
         <item>
         <title>技术链接</title>
