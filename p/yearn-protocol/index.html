@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="go 中如何格式化时间">
-<title>go 中如何格式化时间</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="yearn-protocol拆解">
+<title>yearn-protocol</title>
 
-<link rel='canonical' href='https://zhanghony.github.io/p/go-%E4%B8%AD%E5%A6%82%E4%BD%95%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%97%B6%E9%97%B4/'>
+<link rel='canonical' href='https://zhanghony.github.io/p/yearn-protocol/'>
 
-<link rel="stylesheet" href="/scss/style.min.1184bf3bb1946afcedef0182285f06fd04293f01d3242f9c7e8c650652c25803.css"><meta property='og:title' content="go 中如何格式化时间">
-<meta property='og:description' content="go 中如何格式化时间">
-<meta property='og:url' content='https://zhanghony.github.io/p/go-%E4%B8%AD%E5%A6%82%E4%BD%95%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%97%B6%E9%97%B4/'>
+<link rel="stylesheet" href="/scss/style.min.1184bf3bb1946afcedef0182285f06fd04293f01d3242f9c7e8c650652c25803.css"><meta property='og:title' content="yearn-protocol">
+<meta property='og:description' content="yearn-protocol拆解">
+<meta property='og:url' content='https://zhanghony.github.io/p/yearn-protocol/'>
 <meta property='og:site_name' content='blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='go' /><meta property='article:published_time' content='2022-08-04T09:43:56&#43;00:00'/><meta property='article:modified_time' content='2024-09-16T07:05:02&#43;00:00'/>
-<meta name="twitter:title" content="go 中如何格式化时间">
-<meta name="twitter:description" content="go 中如何格式化时间">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-09-09T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-09-19T03:26:19&#43;00:00'/>
+<meta name="twitter:title" content="yearn-protocol">
+<meta name="twitter:description" content="yearn-protocol拆解">
     </head>
     <body class="
     article-page
@@ -261,8 +261,8 @@
     
     <header class="article-category">
         
-            <a href="/categories/%E7%8E%AF%E5%A2%83%E7%9B%B8%E5%85%B3/" style="background-color: #2a9d8f; color: #fff;">
-                环境相关
+            <a href="/categories/solidity/" style="background-color: #2a9d8f; color: #fff;">
+                solidity
             </a>
         
     </header>
@@ -270,12 +270,12 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/go-%E4%B8%AD%E5%A6%82%E4%BD%95%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%97%B6%E9%97%B4/">go 中如何格式化时间</a>
+            <a href="/p/yearn-protocol/">yearn-protocol</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            go 中如何格式化时间
+            yearn-protocol拆解
         </h3>
         
     </div>
@@ -296,7 +296,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2022-08-04</time>
+                <time class="article-time--published">2024-09-09</time>
             </div>
         
 
@@ -311,7 +311,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 0 分钟
                 </time>
             </div>
         
@@ -326,148 +326,12 @@
     <section class="article-content">
     
     
-    <p>一个简单的go示例</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nx">main</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="p">(</span>
-</span></span><span class="line"><span class="cl">	<span class="s">&#34;fmt&#34;</span>
-</span></span><span class="line"><span class="cl">	<span class="s">&#34;time&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">time</span><span class="p">.</span><span class="nf">Now</span><span class="p">().</span><span class="nf">Format</span><span class="p">(</span><span class="s">&#34;2006-01-02 15:04:05&#34;</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>输出：2022-08-04 09:43:56</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
-</span><span class="lnt">38
-</span><span class="lnt">39
-</span><span class="lnt">40
-</span><span class="lnt">41
-</span><span class="lnt">42
-</span><span class="lnt">43
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">const</span> <span class="p">(</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">_</span>                        <span class="p">=</span> <span class="kc">iota</span>
-</span></span><span class="line"><span class="cl">	<span class="nx">stdLongMonth</span>             <span class="p">=</span> <span class="kc">iota</span> <span class="o">+</span> <span class="nx">stdNeedDate</span>  <span class="c1">// &#34;January&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdMonth</span>                                       <span class="c1">// &#34;Jan&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdNumMonth</span>                                    <span class="c1">// &#34;1&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdZeroMonth</span>                                   <span class="c1">// &#34;01&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdLongWeekDay</span>                                 <span class="c1">// &#34;Monday&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdWeekDay</span>                                     <span class="c1">// &#34;Mon&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdDay</span>                                         <span class="c1">// &#34;2&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdUnderDay</span>                                    <span class="c1">// &#34;_2&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdZeroDay</span>                                     <span class="c1">// &#34;02&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdUnderYearDay</span>                                <span class="c1">// &#34;__2&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdZeroYearDay</span>                                 <span class="c1">// &#34;002&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdHour</span>                  <span class="p">=</span> <span class="kc">iota</span> <span class="o">+</span> <span class="nx">stdNeedClock</span> <span class="c1">// &#34;15&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdHour12</span>                                      <span class="c1">// &#34;3&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdZeroHour12</span>                                  <span class="c1">// &#34;03&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdMinute</span>                                      <span class="c1">// &#34;4&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdZeroMinute</span>                                  <span class="c1">// &#34;04&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdSecond</span>                                      <span class="c1">// &#34;5&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdZeroSecond</span>                                  <span class="c1">// &#34;05&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdLongYear</span>              <span class="p">=</span> <span class="kc">iota</span> <span class="o">+</span> <span class="nx">stdNeedDate</span>  <span class="c1">// &#34;2006&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdYear</span>                                        <span class="c1">// &#34;06&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdPM</span>                    <span class="p">=</span> <span class="kc">iota</span> <span class="o">+</span> <span class="nx">stdNeedClock</span> <span class="c1">// &#34;PM&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdpm</span>                                          <span class="c1">// &#34;pm&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdTZ</span>                    <span class="p">=</span> <span class="kc">iota</span>                <span class="c1">// &#34;MST&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdISO8601TZ</span>                                   <span class="c1">// &#34;Z0700&#34;  // prints Z for UTC
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdISO8601SecondsTZ</span>                            <span class="c1">// &#34;Z070000&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdISO8601ShortTZ</span>                              <span class="c1">// &#34;Z07&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdISO8601ColonTZ</span>                              <span class="c1">// &#34;Z07:00&#34; // prints Z for UTC
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdISO8601ColonSecondsTZ</span>                       <span class="c1">// &#34;Z07:00:00&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdNumTZ</span>                                       <span class="c1">// &#34;-0700&#34;  // always numeric
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdNumSecondsTz</span>                                <span class="c1">// &#34;-070000&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdNumShortTZ</span>                                  <span class="c1">// &#34;-07&#34;    // always numeric
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdNumColonTZ</span>                                  <span class="c1">// &#34;-07:00&#34; // always numeric
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdNumColonSecondsTZ</span>                           <span class="c1">// &#34;-07:00:00&#34;
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdFracSecond0</span>                                 <span class="c1">// &#34;.0&#34;, &#34;.00&#34;, ... , trailing zeros included
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdFracSecond9</span>                                 <span class="c1">// &#34;.9&#34;, &#34;.99&#34;, ..., trailing zeros omitted
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdNeedDate</span>       <span class="p">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">8</span>             <span class="c1">// need month, day, year
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdNeedClock</span>      <span class="p">=</span> <span class="mi">2</span> <span class="o">&lt;&lt;</span> <span class="mi">8</span>             <span class="c1">// need hour, minute, second
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdArgShift</span>       <span class="p">=</span> <span class="mi">16</span>                 <span class="c1">// extra argument in high bits, above low stdArgShift
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdSeparatorShift</span> <span class="p">=</span> <span class="mi">28</span>                 <span class="c1">// extra argument in high 4 bits for fractional second separators
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">stdMask</span>           <span class="p">=</span> <span class="mi">1</span><span class="o">&lt;&lt;</span><span class="nx">stdArgShift</span> <span class="o">-</span> <span class="mi">1</span> <span class="c1">// mask out argument
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">)</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>所以，其实答案已经有了，我们对照一下我们的参数 2006-01-02 15:04:05，可以很简单在上述常量里面找到对应的常量：</p>
-<ul>
-<li>2006 =&gt; stdLongYear</li>
-<li>01 =&gt; stdZeroMonth</li>
-<li>02 =&gt; stdZeroDay</li>
-<li>15 =&gt; stdHour</li>
-<li>04 =&gt; stdZeroMinute</li>
-<li>05 =&gt; stdZeroSecond
-而 layout 参数里面的 - 以及 : 都会原样输出。</li>
-</ul>
-
+    
 </section>
 
 
     <footer class="article-footer">
     
-    <section class="article-tags">
-        
-            <a href="/tags/go/">Go</a>
-        
-    </section>
-
 
     <section class="article-lastmod">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -479,12 +343,20 @@
 
 
         <span>
-            最后更新于 2024-09-16 07:05:02
+            最后更新于 2024-09-19 03:26:19
         </span>
     </section></footer>
 
 
     
+
+
+      
+    
+
+
+       
+     
 </article>
 
     
@@ -497,13 +369,19 @@
         <div class="flex article-list--tile">
             
                 
-<article class="">
-    <a href="/p/github%E7%BD%91%E7%BB%9C%E9%97%AE%E9%A2%98/">
+<article class="has-image">
+    <a href="/p/alchemy/">
         
+        
+            <div class="article-image">
+                
+                    <img src="/post/solidity/background.jpg" loading="lazy" data-key="" data-hash="/post/solidity/background.jpg"/>
+                
+            </div>
         
 
         <div class="article-details">
-            <h2 class="article-title">github网络问题</h2>
+            <h2 class="article-title">alchemy</h2>
         </div>
     </a>
 </article>
@@ -511,12 +389,12 @@
             
                 
 <article class="">
-    <a href="/p/hugo-mermaid/">
+    <a href="/p/solidity/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">hugo mermaid</h2>
+            <h2 class="article-title">solidity大纲</h2>
         </div>
     </a>
 </article>
@@ -529,6 +407,25 @@
      
     
         
+    <script src='//unpkg.com/@waline/client@v2/dist/waline.js'></script>
+<link href='//unpkg.com/@waline/client@v2/dist/waline.css' rel='stylesheet'/>
+<div id="waline" class="waline-container"></div>
+<style>
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+        --waline-font-size: var(--article-font-size);
+    }
+    .waline-container .wl-count {
+        color: var(--card-text-color-main);
+    }
+</style><script>
+    
+    Waline.init({"appid":"YucwlERDDqoDS5lzu1SSBeiH-gzGzoHsz","appkey":"IOJttJAv1Nz6TufX1SANLvU6","dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo"],"lang":"zh-CN","locale":{"admin":"Admin","placeholder":"欢迎留下宝贵的评论！"},"masterkey":"GnsdZB3qzPH9YMjwGp8or5dC","pageview":true,"requiredMeta":["name","email","url"],"serverURL":"https://yucwlerd.lc-cn-n1-shared.com"});
+</script>
+
     
 
     <footer class="site-footer">
@@ -673,6 +570,7 @@
 
 
 
+
     
     <script src=https://zhanghony.github.io/live2d-widget/autoload.js></script>
 
@@ -694,6 +592,10 @@
 
 
     <link rel="stylesheet" href=https://zhanghony.github.io/live2d-widget/waifu-tips.json >
+
+
+
+
 
 
 <script>

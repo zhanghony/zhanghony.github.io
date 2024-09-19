@@ -595,6 +595,14 @@
 
 
     
+
+
+      
+    
+
+
+       
+     
 </article>
 
     
@@ -604,6 +612,25 @@
      
     
         
+    <script src='//unpkg.com/@waline/client@v2/dist/waline.js'></script>
+<link href='//unpkg.com/@waline/client@v2/dist/waline.css' rel='stylesheet'/>
+<div id="waline" class="waline-container"></div>
+<style>
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+        --waline-font-size: var(--article-font-size);
+    }
+    .waline-container .wl-count {
+        color: var(--card-text-color-main);
+    }
+</style><script>
+    
+    Waline.init({"appid":"YucwlERDDqoDS5lzu1SSBeiH-gzGzoHsz","appkey":"IOJttJAv1Nz6TufX1SANLvU6","dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo"],"lang":"zh-CN","locale":{"admin":"Admin","placeholder":"欢迎留下宝贵的评论！"},"masterkey":"GnsdZB3qzPH9YMjwGp8or5dC","pageview":true,"requiredMeta":["name","email","url"],"serverURL":"https://yucwlerd.lc-cn-n1-shared.com"});
+</script>
+
     
 
     <footer class="site-footer">
@@ -748,6 +775,7 @@
 
 
 
+
     
     <script src=https://zhanghony.github.io/live2d-widget/autoload.js></script>
 
@@ -769,6 +797,10 @@
 
 
     <link rel="stylesheet" href=https://zhanghony.github.io/live2d-widget/waifu-tips.json >
+
+
+
+
 
 
 <script>
