@@ -10,7 +10,7 @@
 <meta property='og:description' content="去中心化应用">
 <meta property='og:url' content='https://zhanghony.github.io/p/web3/'>
 <meta property='og:site_name' content='blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2020-09-09T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-09-19T03:57:32&#43;00:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-03-09T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-09-20T12:57:53&#43;00:00'/>
 <meta name="twitter:title" content="DApp">
 <meta name="twitter:description" content="去中心化应用">
     </head>
@@ -251,7 +251,71 @@
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#前置知识">前置知识</a></li>
+        <li><a href="#智能合约">智能合约</a>
+          <ol>
+            <li><a href="#solidity基础">solidity基础</a></li>
+            <li><a href="#开发工具">开发工具</a></li>
+            <li><a href="#token标准">Token标准</a></li>
+            <li><a href="#可升级合约">可升级合约</a></li>
+            <li><a href="#价格预言机">价格预言机</a></li>
+            <li><a href="#多签钱包">多签钱包</a></li>
+            <li><a href="#合约安全">合约安全</a></li>
+            <li><a href="#openzeppelin库">openZeppelin库</a></li>
+            <li><a href="#常见业务">常见业务</a></li>
+            <li><a href="#基础defi协议">基础DeFi协议</a></li>
+          </ol>
+        </li>
+        <li><a href="#后端开发">后端开发</a>
+          <ol>
+            <li><a href="#graphsubgraph">Graph&amp;Subgraph</a></li>
+            <li><a href="#keeper">Keeper</a></li>
+            <li><a href="#中心化业务">中心化业务</a></li>
+          </ol>
+        </li>
+        <li><a href="#前端开发">前端开发</a>
+          <ol>
+            <li><a href="#ui框架">UI框架</a></li>
+            <li><a href="#web3基础库">web3基础库</a></li>
+            <li><a href="#交互库">交互库</a></li>
+            <li><a href="#查询graph">查询graph</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
     <article class="main-article">
@@ -288,7 +352,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2020-09-09</time>
+                <time class="article-time--published">2024-03-09</time>
             </div>
         
 
@@ -303,7 +367,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -318,13 +382,201 @@
     <section class="article-content">
     
     
-    <p>Uniswap：去中心化的加密货币交易平台。</p>
-<p>Compound：去中心化借贷平台。</p>
-<p>Aave：提供各种借贷和储蓄服务。</p>
-<p>MakerDAO：稳定币 DAI 的发行和管理平台。</p>
-<p>Synthetix：合成资产发行和交易平台。</p>
-<p>Curve Finance：专注于稳定币交易的去中心化交易所。</p>
-<p>1inch：聚合多个去中心化交易所的交易平台</p>
+    <p>dapp开发学习路线图</p>
+<h3 id="前置知识">前置知识
+</h3><p>转型web3开发第一课  <a class="link" href="https://www.bilibili.com/video/BV17T421a718"  target="_blank" rel="noopener"
+    >https://www.bilibili.com/video/BV17T421a718</a></p>
+<p>转型web3开发第二课 <a class="link" href="https://www.bilibili.com/video/BV1bE4m1R7QG"  target="_blank" rel="noopener"
+    >https://www.bilibili.com/video/BV1bE4m1R7QG</a></p>
+<h3 id="智能合约">智能合约
+</h3><h4 id="solidity基础">solidity基础
+</h4><h5 id="soliditi语法">soliditi语法
+</h5><ul>
+<li><a class="link" href="%22https://docs.soliditylang.org/en/v0.8.7/080-breaking-changes.html%22" >官方文档</a></li>
+<li><a class="link" href="https://www.wtf.academy/"  target="_blank" rel="noopener"
+    >WTF Academy</a></li>
+<li>崔棉大师玩转Web3   <a class="link" href="https://www.bilibili.com/video/BV1oZ4y1B7WS"  target="_blank" rel="noopener"
+    >https://www.bilibili.com/video/BV1oZ4y1B7WS</a></li>
+</ul>
+<h5 id="编码规范">编码规范
+</h5><ul>
+<li><a class="link" href="https://docs.soliditylang.org/en/latest/style-guide.html"  target="_blank" rel="noopener"
+    >官方规范</a></li>
+<li><a class="link" href="https://www.rareskills.io/post/solidity-style-guide"  target="_blank" rel="noopener"
+    >补充规范</a></li>
+<li><a class="link" href="https://github.com/OpenZeppelin"  target="_blank" rel="noopener"
+    >参考OpenZeppelin</a></li>
+</ul>
+<h4 id="开发工具">开发工具
+</h4><ul>
+<li>Remix
+<ul>
+<li>文件管理器</li>
+<li>编辑器</li>
+<li>搜索文件</li>
+<li>编译器</li>
+<li>Deploy &amp; Run</li>
+<li>Terminal</li>
+<li>插件管理器
+<ul>
+<li>remixd 连接本地</li>
+<li>etherscan</li>
+<li>调试器</li>
+<li>单元测试</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Hardhat</li>
+<li>初始化项目</li>
+<li>配置开发环境</li>
+<li>编译代码</li>
+<li>单元测试</li>
+<li>脚本部署</li>
+<li>verify</li>
+<li>cursor <a class="link" href="https://www.cursor.com/"  target="_blank" rel="noopener"
+    >https://www.cursor.com/</a></li>
+<li>Foundry
+安装
+初始化
+开发
+测试
+单元测试
+模糊测试
+不变性测试
+差异测试
+编译
+部署
+verify</li>
+<li>辅助工具
+<ul>
+<li><a class="link" href="https://app.blocksec.com/"  target="_blank" rel="noopener"
+    >Blocksec Phalcon</a>
+<ul>
+<li><a class="link" href="https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7#code"  target="_blank" rel="noopener"
+    >StandardToken</a></li>
+</ul>
+</li>
+<li><a class="link" href="https://openchain.xyz/"  target="_blank" rel="noopener"
+    >openchain</a></li>
+<li>Tenderly Explorer</li>
+</ul>
+</li>
+</ul>
+<h4 id="token标准">Token标准
+</h4><h5 id="erc20">ERC20
+</h5><pre><code>			标准定义
+			参考实现
+			应用实例
+				WETH(WETH9)
+				WBTC
+				USDT(TetherToken)
+				USDC
+				DAI
+				UNI
+</code></pre>
+<h5 id="erc721">ERC721
+</h5><pre><code>			标准定义
+			参考实现
+			应用实例
+				CryptoKitties
+					https://cryptopunks.app/
+				BAYC 无聊猿
+				Azuki
+</code></pre>
+<h5 id="erc1155">ERC1155
+</h5><pre><code>			标准定义
+			参考实现
+			应用实例
+				adidas Originals
+					https://opensea.io/collection/adidasoriginals
+				Parallel Planetfall
+					https://opensea.io/collection/parallelplanetfall
+</code></pre>
+<h4 id="可升级合约">可升级合约
+</h4><h5 id="代理模式">代理模式
+</h5><h5 id="透明代理">透明代理
+</h5><h5 id="uups">UUPS
+</h5><h5 id="beacon代理">Beacon代理
+</h5><h5 id="最小代理标准">最小代理标准
+</h5><h5 id="具体实现">具体实现
+</h5><h6 id="可升级插件">可升级插件
+</h6><h6 id="contracts-upgradeable">contracts-upgradeable
+</h6><h4 id="价格预言机">价格预言机
+</h4><pre><code>		基本原理
+		Chainlink Price Feeds
+		UniswapV2 TWAP
+		UniswapV3 TWAP
+		Pyth Network
+</code></pre>
+<h4 id="多签钱包">多签钱包
+</h4><h5 id="基础知识">基础知识
+</h5><h5 id="创建多签钱包">创建多签钱包
+</h5><h5 id="转账">转账
+</h5><h5 id="合约交互">合约交互
+</h5><h4 id="合约安全">合约安全
+</h4><h5 id="重入攻击">重入攻击
+</h5><h5 id="选择器碰撞">选择器碰撞
+</h5><h5 id="权限管理">权限管理
+</h5><h5 id="签名重放">签名重放
+</h5><h5 id="伪随机数">伪随机数
+</h5><h5 id="拒绝服务dos">拒绝服务(Dos)
+</h5><h5 id="操纵预言机">操纵预言机
+</h5><h4 id="openzeppelin库">openZeppelin库
+</h4><h5 id="token">token
+</h5><h5 id="proxy">proxy
+</h5><h5 id="access">access
+</h5><h5 id="utils">utils
+</h5><h4 id="常见业务">常见业务
+</h4><h5 id="空头代币">空头代币
+</h5><h5 id="默克尔树方式">默克尔树方式
+</h5><h5 id="签名验证白名单">签名验证白名单 
+</h5><h5 id="staking">Staking
+</h5><h4 id="基础defi协议">基础DeFi协议
+</h4><h5 id="uniswap">Uniswap
+</h5><ul>
+<li>V1</li>
+<li>V2</li>
+<li>V3</li>
+<li>V4</li>
+</ul>
+<h5 id="借贷协议">借贷协议
+</h5><h6 id="compound">Compound
+</h6><ul>
+<li>V2</li>
+<li>V3</li>
+</ul>
+<h6 id="aave">AAVE
+</h6><h6 id="daimakerdao">DAI(makerdao)
+</h6><h6 id="curve">curve
+</h6><h3 id="后端开发">后端开发
+</h3><h4 id="graphsubgraph">Graph&amp;Subgraph
+</h4><h5 id="基本原理">基本原理
+</h5><h5 id="subgraph开发">Subgraph开发
+</h5><h5 id="subgraph部署">Subgraph部署
+</h5><h5 id="私有部署">私有部署
+</h5><h5 id="graphql-api">GraphQL API
+</h5><h4 id="keeper">Keeper
+</h4><h5 id="基本概况">基本概况
+</h5><h5 id="服务设计">服务设计
+</h5><h5 id="接入subgraph">接入Subgraph
+</h5><h5 id="合约交互-1">合约交互
+</h5><h5 id="去中心化网络-chainlin-automation">去中心化网络  Chainlin Automation
+</h5><h4 id="中心化业务">中心化业务
+</h4><h3 id="前端开发">前端开发
+</h3><h4 id="ui框架">UI框架
+</h4><pre><code>		React
+</code></pre>
+<h4 id="web3基础库">web3基础库
+</h4><pre><code>		web3.js
+		ethers.js
+</code></pre>
+<h4 id="交互库">交互库
+</h4><h5 id="viem">viem
+</h5><h5 id="wagmi">wagmi
+</h5><h5 id="connectkit">ConnectKit
+</h5><h4 id="查询graph">查询graph
+</h4><p>GraphQL 客户端</p>
 
 </section>
 
@@ -342,7 +594,7 @@
 
 
         <span>
-            最后更新于 2024-09-19 03:57:32
+            最后更新于 2024-09-20 12:57:53
         </span>
     </section></footer>
 
@@ -482,22 +734,76 @@
 
 
 
-
+ <div id="aplayer"></div>
 <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-
-<meting-js
-    server="netease"
-    type="playlist"
-    id = "7561460225"
-    fixed="true"
-    list-folded="true"
-    storage-name="metingjs"
->
-
-</meting-js>
 
 
+
+<script>
+    const staticDir = "https://zhanghony.github.io/" + 'music/';
+    
+    const songs = [
+                    "深夜的歌-张过年"
+                     ,"酒馆-暗杠"
+                     ,"莉莉安-宋冬野"
+                     ,"飞鸟-柳爽"
+    ];
+    let audios = [];
+    songs.forEach((item) => {
+        const songInfo = item.split('-');
+        audios.push( {
+                
+                title: songInfo[0],
+                author: songInfo[1],
+                url: staticDir + item+ '.mp3',
+                pic: staticDir +'pic/' + item+  '.jpg',
+                lrc: staticDir +'lrc/' + item+  '.lrc',
+            });
+    });
+    const ap = new APlayer({
+        container: document.getElementById('aplayer'),
+        
+        listMaxHeight:"120px",
+        lrcType: 3,
+        audio: audios,
+        
+        fixed: true
+    });
+
+
+    
+
+     window.onbeforeunload = () => {
+        
+        const playInfo = {
+            index: ap.list.index,
+            currentTime: ap.audio.currentTime,
+            paused: ap.paused
+        };
+        localStorage.setItem("playInfo", JSON.stringify(playInfo));
+    };
+
+    
+
+    window.onload = () => {
+        
+        const playInfo = JSON.parse(localStorage.getItem("playInfo"));
+        if (!playInfo) {
+            return;
+        }
+        
+        ap.list.switch(playInfo.index);
+        
+        setTimeout(() => {
+            
+            ap.seek(playInfo.currentTime);
+            
+            if (!playInfo.paused) {
+                ap.play()
+            }
+        }, 50);
+    };
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script>
 
@@ -539,8 +845,8 @@
 
 <script>
 
-     
-     topbar.config({
+    
+    topbar.config({
         barColors: {
             '0': 'rgba(255,  255, 255, 1)', 
             '1.0': 'rgba(0, 149, 234,  1)' 

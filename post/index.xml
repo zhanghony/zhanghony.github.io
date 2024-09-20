@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>zhanghony</copyright>
-        <lastBuildDate>Thu, 19 Sep 2024 03:57:32 +0000</lastBuildDate><atom:link href="https://zhanghony.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 20 Sep 2024 12:57:53 +0000</lastBuildDate><atom:link href="https://zhanghony.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>alchemy</title>
         <link>https://zhanghony.github.io/p/alchemy/</link>
         <pubDate>Mon, 09 Sep 2024 00:00:00 +0000</pubDate>
@@ -239,6 +239,209 @@ worldseries.mp4	1.6e+10 字节	0x9c0e&amp;hellip;	32 字节
         <description></description>
         </item>
         <item>
+        <title>DApp</title>
+        <link>https://zhanghony.github.io/p/web3/</link>
+        <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://zhanghony.github.io/p/web3/</guid>
+        <description>&lt;p&gt;dapp开发学习路线图&lt;/p&gt;
+&lt;h3 id=&#34;前置知识&#34;&gt;前置知识
+&lt;/h3&gt;&lt;p&gt;转型web3开发第一课  &lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV17T421a718&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.bilibili.com/video/BV17T421a718&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;转型web3开发第二课 &lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1bE4m1R7QG&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.bilibili.com/video/BV1bE4m1R7QG&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;智能合约&#34;&gt;智能合约
+&lt;/h3&gt;&lt;h4 id=&#34;solidity基础&#34;&gt;solidity基础
+&lt;/h4&gt;&lt;h5 id=&#34;soliditi语法&#34;&gt;soliditi语法
+&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;%22https://docs.soliditylang.org/en/v0.8.7/080-breaking-changes.html%22&#34; &gt;官方文档&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.wtf.academy/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;WTF Academy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;崔棉大师玩转Web3   &lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1oZ4y1B7WS&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.bilibili.com/video/BV1oZ4y1B7WS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;编码规范&#34;&gt;编码规范
+&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.soliditylang.org/en/latest/style-guide.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官方规范&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.rareskills.io/post/solidity-style-guide&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;补充规范&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/OpenZeppelin&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;参考OpenZeppelin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;开发工具&#34;&gt;开发工具
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Remix
+&lt;ul&gt;
+&lt;li&gt;文件管理器&lt;/li&gt;
+&lt;li&gt;编辑器&lt;/li&gt;
+&lt;li&gt;搜索文件&lt;/li&gt;
+&lt;li&gt;编译器&lt;/li&gt;
+&lt;li&gt;Deploy &amp;amp; Run&lt;/li&gt;
+&lt;li&gt;Terminal&lt;/li&gt;
+&lt;li&gt;插件管理器
+&lt;ul&gt;
+&lt;li&gt;remixd 连接本地&lt;/li&gt;
+&lt;li&gt;etherscan&lt;/li&gt;
+&lt;li&gt;调试器&lt;/li&gt;
+&lt;li&gt;单元测试&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Hardhat&lt;/li&gt;
+&lt;li&gt;初始化项目&lt;/li&gt;
+&lt;li&gt;配置开发环境&lt;/li&gt;
+&lt;li&gt;编译代码&lt;/li&gt;
+&lt;li&gt;单元测试&lt;/li&gt;
+&lt;li&gt;脚本部署&lt;/li&gt;
+&lt;li&gt;verify&lt;/li&gt;
+&lt;li&gt;cursor &lt;a class=&#34;link&#34; href=&#34;https://www.cursor.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.cursor.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Foundry
+安装
+初始化
+开发
+测试
+单元测试
+模糊测试
+不变性测试
+差异测试
+编译
+部署
+verify&lt;/li&gt;
+&lt;li&gt;辅助工具
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://app.blocksec.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Blocksec Phalcon&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7#code&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;StandardToken&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://openchain.xyz/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;openchain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Tenderly Explorer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;token标准&#34;&gt;Token标准
+&lt;/h4&gt;&lt;h5 id=&#34;erc20&#34;&gt;ERC20
+&lt;/h5&gt;&lt;pre&gt;&lt;code&gt;			标准定义
+			参考实现
+			应用实例
+				WETH(WETH9)
+				WBTC
+				USDT(TetherToken)
+				USDC
+				DAI
+				UNI
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;erc721&#34;&gt;ERC721
+&lt;/h5&gt;&lt;pre&gt;&lt;code&gt;			标准定义
+			参考实现
+			应用实例
+				CryptoKitties
+					https://cryptopunks.app/
+				BAYC 无聊猿
+				Azuki
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;erc1155&#34;&gt;ERC1155
+&lt;/h5&gt;&lt;pre&gt;&lt;code&gt;			标准定义
+			参考实现
+			应用实例
+				adidas Originals
+					https://opensea.io/collection/adidasoriginals
+				Parallel Planetfall
+					https://opensea.io/collection/parallelplanetfall
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;可升级合约&#34;&gt;可升级合约
+&lt;/h4&gt;&lt;h5 id=&#34;代理模式&#34;&gt;代理模式
+&lt;/h5&gt;&lt;h5 id=&#34;透明代理&#34;&gt;透明代理
+&lt;/h5&gt;&lt;h5 id=&#34;uups&#34;&gt;UUPS
+&lt;/h5&gt;&lt;h5 id=&#34;beacon代理&#34;&gt;Beacon代理
+&lt;/h5&gt;&lt;h5 id=&#34;最小代理标准&#34;&gt;最小代理标准
+&lt;/h5&gt;&lt;h5 id=&#34;具体实现&#34;&gt;具体实现
+&lt;/h5&gt;&lt;h6 id=&#34;可升级插件&#34;&gt;可升级插件
+&lt;/h6&gt;&lt;h6 id=&#34;contracts-upgradeable&#34;&gt;contracts-upgradeable
+&lt;/h6&gt;&lt;h4 id=&#34;价格预言机&#34;&gt;价格预言机
+&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;		基本原理
+		Chainlink Price Feeds
+		UniswapV2 TWAP
+		UniswapV3 TWAP
+		Pyth Network
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;多签钱包&#34;&gt;多签钱包
+&lt;/h4&gt;&lt;h5 id=&#34;基础知识&#34;&gt;基础知识
+&lt;/h5&gt;&lt;h5 id=&#34;创建多签钱包&#34;&gt;创建多签钱包
+&lt;/h5&gt;&lt;h5 id=&#34;转账&#34;&gt;转账
+&lt;/h5&gt;&lt;h5 id=&#34;合约交互&#34;&gt;合约交互
+&lt;/h5&gt;&lt;h4 id=&#34;合约安全&#34;&gt;合约安全
+&lt;/h4&gt;&lt;h5 id=&#34;重入攻击&#34;&gt;重入攻击
+&lt;/h5&gt;&lt;h5 id=&#34;选择器碰撞&#34;&gt;选择器碰撞
+&lt;/h5&gt;&lt;h5 id=&#34;权限管理&#34;&gt;权限管理
+&lt;/h5&gt;&lt;h5 id=&#34;签名重放&#34;&gt;签名重放
+&lt;/h5&gt;&lt;h5 id=&#34;伪随机数&#34;&gt;伪随机数
+&lt;/h5&gt;&lt;h5 id=&#34;拒绝服务dos&#34;&gt;拒绝服务(Dos)
+&lt;/h5&gt;&lt;h5 id=&#34;操纵预言机&#34;&gt;操纵预言机
+&lt;/h5&gt;&lt;h4 id=&#34;openzeppelin库&#34;&gt;openZeppelin库
+&lt;/h4&gt;&lt;h5 id=&#34;token&#34;&gt;token
+&lt;/h5&gt;&lt;h5 id=&#34;proxy&#34;&gt;proxy
+&lt;/h5&gt;&lt;h5 id=&#34;access&#34;&gt;access
+&lt;/h5&gt;&lt;h5 id=&#34;utils&#34;&gt;utils
+&lt;/h5&gt;&lt;h4 id=&#34;常见业务&#34;&gt;常见业务
+&lt;/h4&gt;&lt;h5 id=&#34;空头代币&#34;&gt;空头代币
+&lt;/h5&gt;&lt;h5 id=&#34;默克尔树方式&#34;&gt;默克尔树方式
+&lt;/h5&gt;&lt;h5 id=&#34;签名验证白名单&#34;&gt;签名验证白名单 
+&lt;/h5&gt;&lt;h5 id=&#34;staking&#34;&gt;Staking
+&lt;/h5&gt;&lt;h4 id=&#34;基础defi协议&#34;&gt;基础DeFi协议
+&lt;/h4&gt;&lt;h5 id=&#34;uniswap&#34;&gt;Uniswap
+&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;V1&lt;/li&gt;
+&lt;li&gt;V2&lt;/li&gt;
+&lt;li&gt;V3&lt;/li&gt;
+&lt;li&gt;V4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;借贷协议&#34;&gt;借贷协议
+&lt;/h5&gt;&lt;h6 id=&#34;compound&#34;&gt;Compound
+&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;V2&lt;/li&gt;
+&lt;li&gt;V3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id=&#34;aave&#34;&gt;AAVE
+&lt;/h6&gt;&lt;h6 id=&#34;daimakerdao&#34;&gt;DAI(makerdao)
+&lt;/h6&gt;&lt;h6 id=&#34;curve&#34;&gt;curve
+&lt;/h6&gt;&lt;h3 id=&#34;后端开发&#34;&gt;后端开发
+&lt;/h3&gt;&lt;h4 id=&#34;graphsubgraph&#34;&gt;Graph&amp;amp;Subgraph
+&lt;/h4&gt;&lt;h5 id=&#34;基本原理&#34;&gt;基本原理
+&lt;/h5&gt;&lt;h5 id=&#34;subgraph开发&#34;&gt;Subgraph开发
+&lt;/h5&gt;&lt;h5 id=&#34;subgraph部署&#34;&gt;Subgraph部署
+&lt;/h5&gt;&lt;h5 id=&#34;私有部署&#34;&gt;私有部署
+&lt;/h5&gt;&lt;h5 id=&#34;graphql-api&#34;&gt;GraphQL API
+&lt;/h5&gt;&lt;h4 id=&#34;keeper&#34;&gt;Keeper
+&lt;/h4&gt;&lt;h5 id=&#34;基本概况&#34;&gt;基本概况
+&lt;/h5&gt;&lt;h5 id=&#34;服务设计&#34;&gt;服务设计
+&lt;/h5&gt;&lt;h5 id=&#34;接入subgraph&#34;&gt;接入Subgraph
+&lt;/h5&gt;&lt;h5 id=&#34;合约交互-1&#34;&gt;合约交互
+&lt;/h5&gt;&lt;h5 id=&#34;去中心化网络-chainlin-automation&#34;&gt;去中心化网络  Chainlin Automation
+&lt;/h5&gt;&lt;h4 id=&#34;中心化业务&#34;&gt;中心化业务
+&lt;/h4&gt;&lt;h3 id=&#34;前端开发&#34;&gt;前端开发
+&lt;/h3&gt;&lt;h4 id=&#34;ui框架&#34;&gt;UI框架
+&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;		React
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;web3基础库&#34;&gt;web3基础库
+&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;		web3.js
+		ethers.js
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;交互库&#34;&gt;交互库
+&lt;/h4&gt;&lt;h5 id=&#34;viem&#34;&gt;viem
+&lt;/h5&gt;&lt;h5 id=&#34;wagmi&#34;&gt;wagmi
+&lt;/h5&gt;&lt;h5 id=&#34;connectkit&#34;&gt;ConnectKit
+&lt;/h5&gt;&lt;h4 id=&#34;查询graph&#34;&gt;查询graph
+&lt;/h4&gt;&lt;p&gt;GraphQL 客户端&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>go 中如何格式化时间</title>
         <link>https://zhanghony.github.io/p/go_time/</link>
         <pubDate>Thu, 04 Aug 2022 09:43:56 +0000</pubDate>
@@ -374,21 +577,6 @@ worldseries.mp4	1.6e+10 字节	0x9c0e&amp;hellip;	32 字节
 &lt;li&gt;05 =&amp;gt; stdZeroSecond
 而 layout 参数里面的 - 以及 : 都会原样输出。&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-        </item>
-        <item>
-        <title>DApp</title>
-        <link>https://zhanghony.github.io/p/web3/</link>
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
-        
-        <guid>https://zhanghony.github.io/p/web3/</guid>
-        <description>&lt;p&gt;Uniswap：去中心化的加密货币交易平台。&lt;/p&gt;
-&lt;p&gt;Compound：去中心化借贷平台。&lt;/p&gt;
-&lt;p&gt;Aave：提供各种借贷和储蓄服务。&lt;/p&gt;
-&lt;p&gt;MakerDAO：稳定币 DAI 的发行和管理平台。&lt;/p&gt;
-&lt;p&gt;Synthetix：合成资产发行和交易平台。&lt;/p&gt;
-&lt;p&gt;Curve Finance：专注于稳定币交易的去中心化交易所。&lt;/p&gt;
-&lt;p&gt;1inch：聚合多个去中心化交易所的交易平台&lt;/p&gt;
 </description>
         </item>
         <item>
