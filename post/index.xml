@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>zhanghony</copyright>
-        <lastBuildDate>Sat, 21 Sep 2024 02:39:40 +0000</lastBuildDate><atom:link href="https://zhanghony.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 21 Sep 2024 03:37:59 +0000</lastBuildDate><atom:link href="https://zhanghony.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>爬取音乐文件</title>
         <link>https://zhanghony.github.io/p/musicapisprider/</link>
         <pubDate>Fri, 20 Sep 2024 22:24:53 +0000</pubDate>
@@ -601,7 +601,7 @@ worldseries.mp4	1.6e+10 字节	0x9c0e&amp;hellip;	32 字节
         <item>
         <title>DApp</title>
         <link>https://zhanghony.github.io/p/web3/</link>
-        <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
+        <pubDate>Fri, 09 Aug 2024 00:00:00 +0000</pubDate>
         
         <guid>https://zhanghony.github.io/p/web3/</guid>
         <description>&lt;p&gt;dapp开发学习路线图&lt;/p&gt;
@@ -630,9 +630,8 @@ worldseries.mp4	1.6e+10 字节	0x9c0e&amp;hellip;	32 字节
     &gt;参考OpenZeppelin&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;开发工具&#34;&gt;开发工具
-&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;Remix
-&lt;ul&gt;
+&lt;/h4&gt;&lt;h5 id=&#34;remix&#34;&gt;Remix
+&lt;/h5&gt;&lt;ul&gt;
 &lt;li&gt;文件管理器&lt;/li&gt;
 &lt;li&gt;编辑器&lt;/li&gt;
 &lt;li&gt;搜索文件&lt;/li&gt;
@@ -648,28 +647,33 @@ worldseries.mp4	1.6e+10 字节	0x9c0e&amp;hellip;	32 字节
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Hardhat&lt;/li&gt;
+&lt;h5 id=&#34;hardhat&#34;&gt;Hardhat
+&lt;/h5&gt;&lt;ul&gt;
 &lt;li&gt;初始化项目&lt;/li&gt;
 &lt;li&gt;配置开发环境&lt;/li&gt;
 &lt;li&gt;编译代码&lt;/li&gt;
 &lt;li&gt;单元测试&lt;/li&gt;
 &lt;li&gt;脚本部署&lt;/li&gt;
 &lt;li&gt;verify&lt;/li&gt;
-&lt;li&gt;cursor &lt;a class=&#34;link&#34; href=&#34;https://www.cursor.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.cursor.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Foundry
-安装
-初始化
-开发
-测试
-单元测试
-模糊测试
-不变性测试
-差异测试
-编译
-部署
-verify&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;cursor-httpswwwcursorcom&#34;&gt;cursor &lt;a class=&#34;link&#34; href=&#34;https://www.cursor.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.cursor.com/&lt;/a&gt;
+&lt;/h5&gt;&lt;h5 id=&#34;foundry&#34;&gt;Foundry
+&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;安装&lt;/li&gt;
+&lt;li&gt;初始化&lt;/li&gt;
+&lt;li&gt;开发&lt;/li&gt;
+&lt;li&gt;测试
+&lt;ul&gt;
+&lt;li&gt;单元测试&lt;/li&gt;
+&lt;li&gt;模糊测试&lt;/li&gt;
+&lt;li&gt;不变性测试&lt;/li&gt;
+&lt;li&gt;差异测试&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;编译&lt;/li&gt;
+&lt;li&gt;部署&lt;/li&gt;
+&lt;li&gt;verify&lt;/li&gt;
 &lt;li&gt;辅助工具
 &lt;ul&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://app.blocksec.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -686,35 +690,46 @@ verify&lt;/li&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;token标准&#34;&gt;Token标准
-&lt;/h4&gt;&lt;h5 id=&#34;erc20&#34;&gt;ERC20
-&lt;/h5&gt;&lt;pre&gt;&lt;code&gt;			标准定义
-			参考实现
-			应用实例
-				WETH(WETH9)
-				WBTC
-				USDT(TetherToken)
-				USDC
-				DAI
-				UNI
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;标准定义&lt;/li&gt;
+&lt;li&gt;参考实现&lt;/li&gt;
+&lt;li&gt;应用实例
+&lt;ul&gt;
+&lt;li&gt;WETH(WETH9)&lt;/li&gt;
+&lt;li&gt;WBTC&lt;/li&gt;
+&lt;li&gt;USDT(TetherToken)&lt;/li&gt;
+&lt;li&gt;USDC&lt;/li&gt;
+&lt;li&gt;DAI&lt;/li&gt;
+&lt;li&gt;UNI&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h5 id=&#34;erc721&#34;&gt;ERC721
-&lt;/h5&gt;&lt;pre&gt;&lt;code&gt;			标准定义
-			参考实现
-			应用实例
-				CryptoKitties
-					https://cryptopunks.app/
-				BAYC 无聊猿
-				Azuki
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;标准定义&lt;/li&gt;
+&lt;li&gt;参考实现&lt;/li&gt;
+&lt;li&gt;应用实例
+&lt;ul&gt;
+&lt;li&gt;CryptoKitties &lt;a class=&#34;link&#34; href=&#34;https://cryptopunks.app/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cryptopunks.app/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;BAYC 无聊猿&lt;/li&gt;
+&lt;li&gt;Azuki&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h5 id=&#34;erc1155&#34;&gt;ERC1155
-&lt;/h5&gt;&lt;pre&gt;&lt;code&gt;			标准定义
-			参考实现
-			应用实例
-				adidas Originals
-					https://opensea.io/collection/adidasoriginals
-				Parallel Planetfall
-					https://opensea.io/collection/parallelplanetfall
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;标准定义&lt;/li&gt;
+&lt;li&gt;参考实现&lt;/li&gt;
+&lt;li&gt;应用实例
+&lt;ul&gt;
+&lt;li&gt;adidas Originals &lt;a class=&#34;link&#34; href=&#34;https://opensea.io/collection/adidasoriginals&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://opensea.io/collection/adidasoriginals&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Parallel Planetfall &lt;a class=&#34;link&#34; href=&#34;https://opensea.io/collection/parallelplanetfall&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://opensea.io/collection/parallelplanetfall&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h4 id=&#34;可升级合约&#34;&gt;可升级合约
 &lt;/h4&gt;&lt;h5 id=&#34;代理模式&#34;&gt;代理模式
 &lt;/h5&gt;&lt;h5 id=&#34;透明代理&#34;&gt;透明代理
@@ -725,13 +740,12 @@ verify&lt;/li&gt;
 &lt;/h5&gt;&lt;h6 id=&#34;可升级插件&#34;&gt;可升级插件
 &lt;/h6&gt;&lt;h6 id=&#34;contracts-upgradeable&#34;&gt;contracts-upgradeable
 &lt;/h6&gt;&lt;h4 id=&#34;价格预言机&#34;&gt;价格预言机
-&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;		基本原理
-		Chainlink Price Feeds
-		UniswapV2 TWAP
-		UniswapV3 TWAP
-		Pyth Network
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;多签钱包&#34;&gt;多签钱包
+&lt;/h4&gt;&lt;h5 id=&#34;基本原理&#34;&gt;基本原理
+&lt;/h5&gt;&lt;h5 id=&#34;chainlink-price-feeds&#34;&gt;Chainlink Price Feeds
+&lt;/h5&gt;&lt;h5 id=&#34;uniswapv2-twap&#34;&gt;UniswapV2 TWAP
+&lt;/h5&gt;&lt;h5 id=&#34;uniswapv3-twap&#34;&gt;UniswapV3 TWAP
+&lt;/h5&gt;&lt;h5 id=&#34;pyth-network&#34;&gt;Pyth Network
+&lt;/h5&gt;&lt;h4 id=&#34;多签钱包&#34;&gt;多签钱包
 &lt;/h4&gt;&lt;h5 id=&#34;基础知识&#34;&gt;基础知识
 &lt;/h5&gt;&lt;h5 id=&#34;创建多签钱包&#34;&gt;创建多签钱包
 &lt;/h5&gt;&lt;h5 id=&#34;转账&#34;&gt;转账
@@ -773,7 +787,7 @@ verify&lt;/li&gt;
 &lt;/h6&gt;&lt;h6 id=&#34;curve&#34;&gt;curve
 &lt;/h6&gt;&lt;h3 id=&#34;后端开发&#34;&gt;后端开发
 &lt;/h3&gt;&lt;h4 id=&#34;graphsubgraph&#34;&gt;Graph&amp;amp;Subgraph
-&lt;/h4&gt;&lt;h5 id=&#34;基本原理&#34;&gt;基本原理
+&lt;/h4&gt;&lt;h5 id=&#34;基本原理-1&#34;&gt;基本原理
 &lt;/h5&gt;&lt;h5 id=&#34;subgraph开发&#34;&gt;Subgraph开发
 &lt;/h5&gt;&lt;h5 id=&#34;subgraph部署&#34;&gt;Subgraph部署
 &lt;/h5&gt;&lt;h5 id=&#34;私有部署&#34;&gt;私有部署
@@ -787,19 +801,17 @@ verify&lt;/li&gt;
 &lt;/h5&gt;&lt;h4 id=&#34;中心化业务&#34;&gt;中心化业务
 &lt;/h4&gt;&lt;h3 id=&#34;前端开发&#34;&gt;前端开发
 &lt;/h3&gt;&lt;h4 id=&#34;ui框架&#34;&gt;UI框架
-&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;		React
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;web3基础库&#34;&gt;web3基础库
-&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;		web3.js
-		ethers.js
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;交互库&#34;&gt;交互库
+&lt;/h4&gt;&lt;h5 id=&#34;react&#34;&gt;React
+&lt;/h5&gt;&lt;h4 id=&#34;web3基础库&#34;&gt;web3基础库
+&lt;/h4&gt;&lt;h5 id=&#34;web3js&#34;&gt;web3.js
+&lt;/h5&gt;&lt;h5 id=&#34;ethersjs&#34;&gt;ethers.js
+&lt;/h5&gt;&lt;h4 id=&#34;交互库&#34;&gt;交互库
 &lt;/h4&gt;&lt;h5 id=&#34;viem&#34;&gt;viem
 &lt;/h5&gt;&lt;h5 id=&#34;wagmi&#34;&gt;wagmi
 &lt;/h5&gt;&lt;h5 id=&#34;connectkit&#34;&gt;ConnectKit
 &lt;/h5&gt;&lt;h4 id=&#34;查询graph&#34;&gt;查询graph
-&lt;/h4&gt;&lt;p&gt;GraphQL 客户端&lt;/p&gt;
-</description>
+&lt;/h4&gt;&lt;h5 id=&#34;graphql-客户端&#34;&gt;GraphQL 客户端
+&lt;/h5&gt;</description>
         </item>
         <item>
         <title>go 中如何格式化时间</title>

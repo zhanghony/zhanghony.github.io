@@ -10,7 +10,7 @@
 <meta property='og:description' content="去中心化应用">
 <meta property='og:url' content='https://zhanghony.github.io/p/web3/'>
 <meta property='og:site_name' content='blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-03-09T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-09-21T02:39:40&#43;00:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-08-09T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-09-21T03:37:59&#43;00:00'/>
 <meta name="twitter:title" content="DApp">
 <meta name="twitter:description" content="去中心化应用">
     </head>
@@ -278,31 +278,136 @@
         <li><a href="#前置知识">前置知识</a></li>
         <li><a href="#智能合约">智能合约</a>
           <ol>
-            <li><a href="#solidity基础">solidity基础</a></li>
-            <li><a href="#开发工具">开发工具</a></li>
-            <li><a href="#token标准">Token标准</a></li>
-            <li><a href="#可升级合约">可升级合约</a></li>
-            <li><a href="#价格预言机">价格预言机</a></li>
-            <li><a href="#多签钱包">多签钱包</a></li>
-            <li><a href="#合约安全">合约安全</a></li>
-            <li><a href="#openzeppelin库">openZeppelin库</a></li>
-            <li><a href="#常见业务">常见业务</a></li>
-            <li><a href="#基础defi协议">基础DeFi协议</a></li>
+            <li><a href="#solidity基础">solidity基础</a>
+              <ol>
+                <li><a href="#soliditi语法">soliditi语法</a></li>
+                <li><a href="#编码规范">编码规范</a></li>
+              </ol>
+            </li>
+            <li><a href="#开发工具">开发工具</a>
+              <ol>
+                <li><a href="#remix">Remix</a></li>
+                <li><a href="#hardhat">Hardhat</a></li>
+                <li><a href="#cursor-httpswwwcursorcom">cursor <a href="https://www.cursor.com/">https://www.cursor.com/</a></a></li>
+                <li><a href="#foundry">Foundry</a></li>
+              </ol>
+            </li>
+            <li><a href="#token标准">Token标准</a>
+              <ol>
+                <li><a href="#erc721">ERC721</a></li>
+                <li><a href="#erc1155">ERC1155</a></li>
+              </ol>
+            </li>
+            <li><a href="#可升级合约">可升级合约</a>
+              <ol>
+                <li><a href="#代理模式">代理模式</a></li>
+                <li><a href="#透明代理">透明代理</a></li>
+                <li><a href="#uups">UUPS</a></li>
+                <li><a href="#beacon代理">Beacon代理</a></li>
+                <li><a href="#最小代理标准">最小代理标准</a></li>
+                <li><a href="#具体实现">具体实现</a></li>
+              </ol>
+            </li>
+            <li><a href="#价格预言机">价格预言机</a>
+              <ol>
+                <li><a href="#基本原理">基本原理</a></li>
+                <li><a href="#chainlink-price-feeds">Chainlink Price Feeds</a></li>
+                <li><a href="#uniswapv2-twap">UniswapV2 TWAP</a></li>
+                <li><a href="#uniswapv3-twap">UniswapV3 TWAP</a></li>
+                <li><a href="#pyth-network">Pyth Network</a></li>
+              </ol>
+            </li>
+            <li><a href="#多签钱包">多签钱包</a>
+              <ol>
+                <li><a href="#基础知识">基础知识</a></li>
+                <li><a href="#创建多签钱包">创建多签钱包</a></li>
+                <li><a href="#转账">转账</a></li>
+                <li><a href="#合约交互">合约交互</a></li>
+              </ol>
+            </li>
+            <li><a href="#合约安全">合约安全</a>
+              <ol>
+                <li><a href="#重入攻击">重入攻击</a></li>
+                <li><a href="#选择器碰撞">选择器碰撞</a></li>
+                <li><a href="#权限管理">权限管理</a></li>
+                <li><a href="#签名重放">签名重放</a></li>
+                <li><a href="#伪随机数">伪随机数</a></li>
+                <li><a href="#拒绝服务dos">拒绝服务(Dos)</a></li>
+                <li><a href="#操纵预言机">操纵预言机</a></li>
+              </ol>
+            </li>
+            <li><a href="#openzeppelin库">openZeppelin库</a>
+              <ol>
+                <li><a href="#token">token</a></li>
+                <li><a href="#proxy">proxy</a></li>
+                <li><a href="#access">access</a></li>
+                <li><a href="#utils">utils</a></li>
+              </ol>
+            </li>
+            <li><a href="#常见业务">常见业务</a>
+              <ol>
+                <li><a href="#空头代币">空头代币</a></li>
+                <li><a href="#默克尔树方式">默克尔树方式</a></li>
+                <li><a href="#签名验证白名单">签名验证白名单 </a></li>
+                <li><a href="#staking">Staking</a></li>
+              </ol>
+            </li>
+            <li><a href="#基础defi协议">基础DeFi协议</a>
+              <ol>
+                <li><a href="#uniswap">Uniswap</a></li>
+                <li><a href="#借贷协议">借贷协议</a></li>
+              </ol>
+            </li>
           </ol>
         </li>
         <li><a href="#后端开发">后端开发</a>
           <ol>
-            <li><a href="#graphsubgraph">Graph&amp;Subgraph</a></li>
-            <li><a href="#keeper">Keeper</a></li>
+            <li><a href="#graphsubgraph">Graph&amp;Subgraph</a>
+              <ol>
+                <li><a href="#基本原理-1">基本原理</a></li>
+                <li><a href="#subgraph开发">Subgraph开发</a></li>
+                <li><a href="#subgraph部署">Subgraph部署</a></li>
+                <li><a href="#私有部署">私有部署</a></li>
+                <li><a href="#graphql-api">GraphQL API</a></li>
+              </ol>
+            </li>
+            <li><a href="#keeper">Keeper</a>
+              <ol>
+                <li><a href="#基本概况">基本概况</a></li>
+                <li><a href="#服务设计">服务设计</a></li>
+                <li><a href="#接入subgraph">接入Subgraph</a></li>
+                <li><a href="#合约交互-1">合约交互</a></li>
+                <li><a href="#去中心化网络-chainlin-automation">去中心化网络  Chainlin Automation</a></li>
+              </ol>
+            </li>
             <li><a href="#中心化业务">中心化业务</a></li>
           </ol>
         </li>
         <li><a href="#前端开发">前端开发</a>
           <ol>
-            <li><a href="#ui框架">UI框架</a></li>
-            <li><a href="#web3基础库">web3基础库</a></li>
-            <li><a href="#交互库">交互库</a></li>
-            <li><a href="#查询graph">查询graph</a></li>
+            <li><a href="#ui框架">UI框架</a>
+              <ol>
+                <li><a href="#react">React</a></li>
+              </ol>
+            </li>
+            <li><a href="#web3基础库">web3基础库</a>
+              <ol>
+                <li><a href="#web3js">web3.js</a></li>
+                <li><a href="#ethersjs">ethers.js</a></li>
+              </ol>
+            </li>
+            <li><a href="#交互库">交互库</a>
+              <ol>
+                <li><a href="#viem">viem</a></li>
+                <li><a href="#wagmi">wagmi</a></li>
+                <li><a href="#connectkit">ConnectKit</a></li>
+              </ol>
+            </li>
+            <li><a href="#查询graph">查询graph</a>
+              <ol>
+                <li><a href="#graphql-客户端">GraphQL 客户端</a></li>
+              </ol>
+            </li>
           </ol>
         </li>
       </ol>
@@ -352,7 +457,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2024-03-09</time>
+                <time class="article-time--published">2024-08-09</time>
             </div>
         
 
@@ -408,9 +513,8 @@
     >参考OpenZeppelin</a></li>
 </ul>
 <h4 id="开发工具">开发工具
-</h4><ul>
-<li>Remix
-<ul>
+</h4><h5 id="remix">Remix
+</h5><ul>
 <li>文件管理器</li>
 <li>编辑器</li>
 <li>搜索文件</li>
@@ -426,28 +530,33 @@
 </ul>
 </li>
 </ul>
-</li>
-<li>Hardhat</li>
+<h5 id="hardhat">Hardhat
+</h5><ul>
 <li>初始化项目</li>
 <li>配置开发环境</li>
 <li>编译代码</li>
 <li>单元测试</li>
 <li>脚本部署</li>
 <li>verify</li>
-<li>cursor <a class="link" href="https://www.cursor.com/"  target="_blank" rel="noopener"
-    >https://www.cursor.com/</a></li>
-<li>Foundry
-安装
-初始化
-开发
-测试
-单元测试
-模糊测试
-不变性测试
-差异测试
-编译
-部署
-verify</li>
+</ul>
+<h5 id="cursor-httpswwwcursorcom">cursor <a class="link" href="https://www.cursor.com/"  target="_blank" rel="noopener"
+    >https://www.cursor.com/</a>
+</h5><h5 id="foundry">Foundry
+</h5><ul>
+<li>安装</li>
+<li>初始化</li>
+<li>开发</li>
+<li>测试
+<ul>
+<li>单元测试</li>
+<li>模糊测试</li>
+<li>不变性测试</li>
+<li>差异测试</li>
+</ul>
+</li>
+<li>编译</li>
+<li>部署</li>
+<li>verify</li>
 <li>辅助工具
 <ul>
 <li><a class="link" href="https://app.blocksec.com/"  target="_blank" rel="noopener"
@@ -464,35 +573,46 @@ verify</li>
 </li>
 </ul>
 <h4 id="token标准">Token标准
-</h4><h5 id="erc20">ERC20
-</h5><pre><code>			标准定义
-			参考实现
-			应用实例
-				WETH(WETH9)
-				WBTC
-				USDT(TetherToken)
-				USDC
-				DAI
-				UNI
-</code></pre>
+</h4><ul>
+<li>标准定义</li>
+<li>参考实现</li>
+<li>应用实例
+<ul>
+<li>WETH(WETH9)</li>
+<li>WBTC</li>
+<li>USDT(TetherToken)</li>
+<li>USDC</li>
+<li>DAI</li>
+<li>UNI</li>
+</ul>
+</li>
+</ul>
 <h5 id="erc721">ERC721
-</h5><pre><code>			标准定义
-			参考实现
-			应用实例
-				CryptoKitties
-					https://cryptopunks.app/
-				BAYC 无聊猿
-				Azuki
-</code></pre>
+</h5><ul>
+<li>标准定义</li>
+<li>参考实现</li>
+<li>应用实例
+<ul>
+<li>CryptoKitties <a class="link" href="https://cryptopunks.app/"  target="_blank" rel="noopener"
+    >https://cryptopunks.app/</a></li>
+<li>BAYC 无聊猿</li>
+<li>Azuki</li>
+</ul>
+</li>
+</ul>
 <h5 id="erc1155">ERC1155
-</h5><pre><code>			标准定义
-			参考实现
-			应用实例
-				adidas Originals
-					https://opensea.io/collection/adidasoriginals
-				Parallel Planetfall
-					https://opensea.io/collection/parallelplanetfall
-</code></pre>
+</h5><ul>
+<li>标准定义</li>
+<li>参考实现</li>
+<li>应用实例
+<ul>
+<li>adidas Originals <a class="link" href="https://opensea.io/collection/adidasoriginals"  target="_blank" rel="noopener"
+    >https://opensea.io/collection/adidasoriginals</a></li>
+<li>Parallel Planetfall <a class="link" href="https://opensea.io/collection/parallelplanetfall"  target="_blank" rel="noopener"
+    >https://opensea.io/collection/parallelplanetfall</a></li>
+</ul>
+</li>
+</ul>
 <h4 id="可升级合约">可升级合约
 </h4><h5 id="代理模式">代理模式
 </h5><h5 id="透明代理">透明代理
@@ -503,13 +623,12 @@ verify</li>
 </h5><h6 id="可升级插件">可升级插件
 </h6><h6 id="contracts-upgradeable">contracts-upgradeable
 </h6><h4 id="价格预言机">价格预言机
-</h4><pre><code>		基本原理
-		Chainlink Price Feeds
-		UniswapV2 TWAP
-		UniswapV3 TWAP
-		Pyth Network
-</code></pre>
-<h4 id="多签钱包">多签钱包
+</h4><h5 id="基本原理">基本原理
+</h5><h5 id="chainlink-price-feeds">Chainlink Price Feeds
+</h5><h5 id="uniswapv2-twap">UniswapV2 TWAP
+</h5><h5 id="uniswapv3-twap">UniswapV3 TWAP
+</h5><h5 id="pyth-network">Pyth Network
+</h5><h4 id="多签钱包">多签钱包
 </h4><h5 id="基础知识">基础知识
 </h5><h5 id="创建多签钱包">创建多签钱包
 </h5><h5 id="转账">转账
@@ -551,7 +670,7 @@ verify</li>
 </h6><h6 id="curve">curve
 </h6><h3 id="后端开发">后端开发
 </h3><h4 id="graphsubgraph">Graph&amp;Subgraph
-</h4><h5 id="基本原理">基本原理
+</h4><h5 id="基本原理-1">基本原理
 </h5><h5 id="subgraph开发">Subgraph开发
 </h5><h5 id="subgraph部署">Subgraph部署
 </h5><h5 id="私有部署">私有部署
@@ -565,19 +684,17 @@ verify</li>
 </h5><h4 id="中心化业务">中心化业务
 </h4><h3 id="前端开发">前端开发
 </h3><h4 id="ui框架">UI框架
-</h4><pre><code>		React
-</code></pre>
-<h4 id="web3基础库">web3基础库
-</h4><pre><code>		web3.js
-		ethers.js
-</code></pre>
-<h4 id="交互库">交互库
+</h4><h5 id="react">React
+</h5><h4 id="web3基础库">web3基础库
+</h4><h5 id="web3js">web3.js
+</h5><h5 id="ethersjs">ethers.js
+</h5><h4 id="交互库">交互库
 </h4><h5 id="viem">viem
 </h5><h5 id="wagmi">wagmi
 </h5><h5 id="connectkit">ConnectKit
 </h5><h4 id="查询graph">查询graph
-</h4><p>GraphQL 客户端</p>
-
+</h4><h5 id="graphql-客户端">GraphQL 客户端
+</h5>
 </section>
 
 
@@ -594,7 +711,7 @@ verify</li>
 
 
         <span>
-            最后更新于 2024-09-21 02:39:40
+            最后更新于 2024-09-21 03:37:59
         </span>
     </section></footer>
 
@@ -622,8 +739,6 @@ verify</li>
     <footer class="site-footer">
     <section class="copyright">
         &copy; 
-        
-            2020 - 
         
         2024 zhanghony
     </section>
