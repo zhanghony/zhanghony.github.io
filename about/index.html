@@ -730,7 +730,7 @@
 
 
  <div id="aplayer"></div>
-<script src="js/APlayer.min.js"></script>
+ <script src="https://zhanghony.github.io/js/APlayer.min.js"></script>
 
 
 
@@ -803,8 +803,8 @@
         const songInfo = item.split('-');
         audios.push( {
                 
-                title: songInfo[0],
-                author: songInfo[1],
+                name: songInfo[0],
+                artist: songInfo[1],
                 url: staticDir + item+ '.mp3',
                 pic: staticDir +'pic/' + item+  '.jpg',
                 lrc: staticDir +'lrc/' + item+  '.lrc',
@@ -851,11 +851,13 @@
             if (!playInfo.paused) {
                 ap.play()
             }
-        }, 50);
+        }, 500);
     };
 </script>
 
-<script src="js/pjax.min.js"></script>
+<script src="https://zhanghony.github.io/js/pjax.min.js"></script>
+
+
 
 
 

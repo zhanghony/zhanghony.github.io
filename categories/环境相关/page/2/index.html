@@ -10,7 +10,7 @@
 <meta property='og:description' content="各种软件安装环境以及开发或者使用工具时遇到的问题解决方案">
 <meta property='og:url' content='https://zhanghony.github.io/categories/%E7%8E%AF%E5%A2%83%E7%9B%B8%E5%85%B3/'>
 <meta property='og:site_name' content='blog'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2024-09-21T01:47:14&#43;00:00 '/><meta property='og:image' content='https://zhanghony.github.io/categories/%E7%8E%AF%E5%A2%83%E7%9B%B8%E5%85%B3/file-settings.svg' />
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2024-09-21T02:39:40&#43;00:00 '/><meta property='og:image' content='https://zhanghony.github.io/categories/%E7%8E%AF%E5%A2%83%E7%9B%B8%E5%85%B3/file-settings.svg' />
 <meta name="twitter:title" content="Category: 环境相关 - blog">
 <meta name="twitter:description" content="各种软件安装环境以及开发或者使用工具时遇到的问题解决方案"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://zhanghony.github.io/categories/%E7%8E%AF%E5%A2%83%E7%9B%B8%E5%85%B3/file-settings.svg' /><link rel="alternate" type="application/rss&#43;xml" href="https://zhanghony.github.io/categories/%E7%8E%AF%E5%A2%83%E7%9B%B8%E5%85%B3/index.xml">
@@ -485,7 +485,7 @@
 
 
  <div id="aplayer"></div>
-<script src="js/APlayer.min.js"></script>
+ <script src="https://zhanghony.github.io/js/APlayer.min.js"></script>
 
 
 
@@ -558,8 +558,8 @@
         const songInfo = item.split('-');
         audios.push( {
                 
-                title: songInfo[0],
-                author: songInfo[1],
+                name: songInfo[0],
+                artist: songInfo[1],
                 url: staticDir + item+ '.mp3',
                 pic: staticDir +'pic/' + item+  '.jpg',
                 lrc: staticDir +'lrc/' + item+  '.lrc',
@@ -606,11 +606,13 @@
             if (!playInfo.paused) {
                 ap.play()
             }
-        }, 50);
+        }, 500);
     };
 </script>
 
-<script src="js/pjax.min.js"></script>
+<script src="https://zhanghony.github.io/js/pjax.min.js"></script>
+
+
 
 
 

@@ -10,7 +10,7 @@
 <meta property='og:description' content="">
 <meta property='og:url' content='https://zhanghony.github.io/search/'>
 <meta property='og:site_name' content='blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Page' /><meta property='article:modified_time' content='2024-09-21T01:47:14&#43;00:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Page' /><meta property='article:modified_time' content='2024-09-21T02:39:40&#43;00:00'/>
 <meta name="twitter:title" content="搜索">
 <meta name="twitter:description" content=""><link rel="alternate" type="application/json" href="https://zhanghony.github.io/search/index.json"><link rel="preload" href="/search/index.json" as="fetch" crossorigin="anonymous">
     </head>
@@ -315,7 +315,7 @@
 
 
  <div id="aplayer"></div>
-<script src="js/APlayer.min.js"></script>
+ <script src="https://zhanghony.github.io/js/APlayer.min.js"></script>
 
 
 
@@ -388,8 +388,8 @@
         const songInfo = item.split('-');
         audios.push( {
                 
-                title: songInfo[0],
-                author: songInfo[1],
+                name: songInfo[0],
+                artist: songInfo[1],
                 url: staticDir + item+ '.mp3',
                 pic: staticDir +'pic/' + item+  '.jpg',
                 lrc: staticDir +'lrc/' + item+  '.lrc',
@@ -436,11 +436,13 @@
             if (!playInfo.paused) {
                 ap.play()
             }
-        }, 50);
+        }, 500);
     };
 </script>
 
-<script src="js/pjax.min.js"></script>
+<script src="https://zhanghony.github.io/js/pjax.min.js"></script>
+
+
 
 
 

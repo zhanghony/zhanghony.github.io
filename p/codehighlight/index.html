@@ -10,7 +10,7 @@
 <meta property='og:description' content="代码高亮">
 <meta property='og:url' content='https://zhanghony.github.io/p/codehighlight/'>
 <meta property='og:site_name' content='blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2020-09-09T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-09-21T01:47:14&#43;00:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2020-09-09T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-09-21T02:39:40&#43;00:00'/>
 <meta name="twitter:title" content="代码高亮">
 <meta name="twitter:description" content="代码高亮">
     </head>
@@ -391,7 +391,7 @@
 
 
         <span>
-            最后更新于 2024-09-21 01:47:14
+            最后更新于 2024-09-21 02:39:40
         </span>
     </section></footer>
 
@@ -532,7 +532,7 @@
 
 
  <div id="aplayer"></div>
-<script src="js/APlayer.min.js"></script>
+ <script src="https://zhanghony.github.io/js/APlayer.min.js"></script>
 
 
 
@@ -605,8 +605,8 @@
         const songInfo = item.split('-');
         audios.push( {
                 
-                title: songInfo[0],
-                author: songInfo[1],
+                name: songInfo[0],
+                artist: songInfo[1],
                 url: staticDir + item+ '.mp3',
                 pic: staticDir +'pic/' + item+  '.jpg',
                 lrc: staticDir +'lrc/' + item+  '.lrc',
@@ -653,11 +653,13 @@
             if (!playInfo.paused) {
                 ap.play()
             }
-        }, 50);
+        }, 500);
     };
 </script>
 
-<script src="js/pjax.min.js"></script>
+<script src="https://zhanghony.github.io/js/pjax.min.js"></script>
+
+
 
 
 
